@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+ position: relative; 
+ scroll-behavior:smooth
+}
+
+
+@font-face {
+  font-family: 'spacegrostekbold';
+  src: url('fonts/spacegroteskbold/SpaceGrotesk-VariableFont_wght.woff2') format('woff2');
+  src: url('fonts/spacegroteskbold/SpaceGrotesk-VariableFont_wght.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'spacegrostek';
+  src: url('fonts/spacegrotesk/space.woff') format('woff');
+  src: url('fonts/spacegrotesk/space.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'varela';
+  src: url('fonts/varela/varelareg.woff') format('woff');
+  src: url('fonts/varela/varelareg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+li,a,button{
+  font-family: 'spacegrotesk',sans-serif;
+  font-size: 18px;
+  font-weight:500;
+}
+h1,h2,h3,h4,h5,h6{
+  
+  font-family: 'spacegrostekbold',sans-serif;
+
+}
+p{
+  font-family: 'varela',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+  color: whtie;
+}
+
+@media (max-width:1100px) {
+  h1,h2{
+    font-size: 34px;
+  }
+  li,a{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 20px;
+  }
+}

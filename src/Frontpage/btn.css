@@ -1,0 +1,26 @@
+.button-container{
+    
+}
+
+.button-all{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 20px 42px;
+    border-radius:40px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+.button-arrow-svg{
+
+transition: 0.3s ease;
+}
+
+@media (max-width:1360px) {
+    .button-all{
+        font-size: 15px;
+        padding: 15px 35px;
+    }
+}

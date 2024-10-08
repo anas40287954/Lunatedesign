@@ -1,0 +1,89 @@
+
+.card-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+   
+    width:450px;
+}
+
+.card-img{
+ /* width: 100%;
+ height: 70%;    */
+
+ height: 520px;
+
+}
+
+.team-mate-name{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.team-mate-role{
+    font-size: 22px;
+    margin: 0px;
+}
+
+.name-informationbtn-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.img-plus{
+height: 60px;
+width: 60px;
+}
+.more-info-btn{
+    margin-top:25px ;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    transition:0.4s ease ;
+    
+}
+
+
+.rotate-to-cross{
+    transition:0.4s ease ;
+    transform: rotate(-45deg);
+}
+
+.collapsed-team-info{
+    max-width: 100%;
+    opacity: 0;
+    
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: opacity 0.3s ease,visibility 0.4s ease ,max-height 0.7s ease;
+    
+}
+.collapsed-team-info p{
+   
+    
+}
+.collapse{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease, height 0.3s ease;
+}
+
+
+
+
+.uncollapse{
+    opacity:1;
+    min-height: auto;
+    max-height: 800px;
+    visibility: visible;
+    transition:max-height 0.6s ease-out,opacity 1s ease, visivility 1s ease;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+:root {
+    --bs-nav-background-color: white;
+    --bs-ourpeople-banner-color: rgba(242, 232, 217, 1);
+    --bs-nav-font-color: black;
+    --bs-button-ourpeople-color: #A68B5C;
+    --bs-ourpeople-text-description: rgba(168, 161, 163, 1);
+    --bs-meet-team-special-text: rgba(168, 161, 163, 1);
+    --bs-meet-team-text-color: black;
+}
+
+.ourpeople-background {
+    transition: height 0.5s ease;
+    position: relative;
+    background-color: var(--bs-ourpeople-banner-color);
+    height: 60vh;
+}
+
+.ourpeople-background-img {
+
+    background-image: url(/public/ourpeoplebackgroundimg.svg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.ourpeople-navbar {
+
+    background-color: var(--bs-nav-background-color);
+    z-index: 4;
+}
+
+
+
+
+
+
+.ourpeople-banner-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 79%;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.ourpeople-text h1 {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.ourpeople-text-description p {
+    font-size: 26px;
+    margin: 0px;
+    color: var(--bs-ourpeople-text-description);
+    font-weight: 400;
+}
+
+.ourpeople-text-description {
+    width: 65%;
+}
+
+.meet-the-team-container {
+    padding: 100px 100px;
+}
+
+
+.meet-team-text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meet-team-description-btn {
+    max-width: 45%;
+}
+
+.meet-team-description-btn p {
+    font-size: 20px;
+}
+
+
+
+.meet-team-text-sub {
+    font-size: 54px;
+    color: var(--bs-meet-team-text-color);
+}
+
+.meet-team-text {
+    width: 45%;
+}
+
+.meet-team-text h3 {
+    color: var(--bs-meet-team-special-text);
+}
+
+
+.team-information-cards {
+    position: relative;
+  margin-top:100px ;
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.team-information-cards div{
+    
+ 
+}
