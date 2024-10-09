@@ -27,9 +27,12 @@ export default function Ourapproach() {
                 </div> 
             </div>
 
-            <div>
-                <SimpleSlider/>
-            </div>
+           <div>
+               
+                    <SimpleSlider/>
+           </div>
+                
+            
 
         </div>
     )

@@ -1,0 +1,113 @@
+:root {
+    --bs-carousel-text-background: #F2E8D9;
+}
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    height: fit-content;
+}
+
+.container img{
+    width: 100%;
+}
+
+.slider-nav {
+    max-width: 63%;
+
+
+}
+
+
+
+.text-container {
+    height: 600px;
+    width: 37%;
+    background-color: #F2E8D9;
+
+}
+
+.slider-for {
+    height: 100%;
+
+    padding: 80px;
+    display: block;
+}
+
+
+
+.slider-for img {
+    object-fit: cover;
+
+
+}
+
+.slider-nav img {
+    object-fit: cover;
+    height: 600px;
+
+}
+
+.text-slide{
+    
+}
+
+
+.text-slide p{
+font-size: 28px;
+
+}
+
+.text-slide h1{
+    font-size: 40px;
+}
+
+
+
+.learnmore-btn{
+    background-color: transparent;
+    margin-top: 60px;
+    border: none;
+    padding: 0px;
+}
+
+
+
+.container img {}
+
+
+.custom-arrow {
+
+    position: absolute;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 10px 15px;
+    z-index: 10;
+    bottom: -50px;
+    right: 0;
+
+
+}
+
+.prev-arrow {
+    margin-right: 100px;
+}
+
+
+.slick-prev:before {
+    display: none;
+}
+
+.slick-next:before {
+    display: none;
+}
+
+
+
+.slick-dots li {
+    display: none;
+}

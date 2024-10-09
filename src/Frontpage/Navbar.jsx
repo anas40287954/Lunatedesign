@@ -135,41 +135,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { clear } from "@testing-library/user-event/dist/clear";
 import Button from "./Button";
 import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
-
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
+    const [menuHeight, setMenuHeight] = useState(0);
+    const NavRef = useRef(null)
 
    
-
-
-
-
-
-
-    const [menuHeight, setMenuHeight] = useState(0);
 
 
     const showMenu = () => {
@@ -180,7 +155,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="custom-nav-container" >
+            <div className="custom-nav-container" ref={NavRef} >
                 <div className="nav-container">
                     <div className={"nav-menu-lunate " + (isMenuOpen ? "mobile-nav-menu-lunate" : "")}>
                         <div className={"logo-menubtn " + (isMenuOpen ? 'nav-menu-mobile-logo-color' : "")}>
@@ -193,7 +168,7 @@ export default function Navbar() {
                         </div>
                         <ul className={"nav-items " + (isMenuOpen ? "nav-items-mobile-responsive" : "")}>
                             <li className="items-info droppable aboutlunate"
-                                
+
                             >
 
                                 <a href="#" className="items-info main-menu-items">About Lunate
@@ -220,9 +195,9 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div 
-            
-            className="mega-menu-cover" style={{ height: `${menuHeight}px`, transition: 'height 0.2s ease' }}></div>
+            <div
+
+                className="mega-menu-cover" style={{ height: `${menuHeight}px`, transition: 'height 0.2s ease' }}></div>
         </>
     );
 }
