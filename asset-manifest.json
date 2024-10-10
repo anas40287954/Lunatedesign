@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Lunatedesign/static/css/main.a5d2f10a.css",
+    "main.js": "/Lunatedesign/static/js/main.3acee538.js",
+    "static/js/453.26fb96cd.chunk.js": "/Lunatedesign/static/js/453.26fb96cd.chunk.js",
+    "static/media/herobackblack.svg": "/Lunatedesign/static/media/herobackblack.8958411f1497f2f9814e.svg",
+    "static/media/varelareg.woff": "/Lunatedesign/static/media/varelareg.c8542bfad9f0f77b8fdd.woff",
+    "static/media/SpaceGrotesk-VariableFont_wght.woff2": "/Lunatedesign/static/media/SpaceGrotesk-VariableFont_wght.157acdbef18e1d291884.woff2",
+    "static/media/space.woff": "/Lunatedesign/static/media/space.ee435e05068f70c6c38f.woff",
+    "static/media/ourpeoplebackgroundimg.svg": "/Lunatedesign/static/media/ourpeoplebackgroundimg.57ac47cc5796e634fdf6.svg",
+    "static/media/slick.svg": "/Lunatedesign/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Lunatedesign/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Lunatedesign/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Lunatedesign/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Lunatedesign/index.html",
+    "static/media/crescent.svg": "/Lunatedesign/static/media/crescent.ced6cb5bf65e30e6a2e6.svg",
+    "main.a5d2f10a.css.map": "/Lunatedesign/static/css/main.a5d2f10a.css.map",
+    "main.3acee538.js.map": "/Lunatedesign/static/js/main.3acee538.js.map",
+    "453.26fb96cd.chunk.js.map": "/Lunatedesign/static/js/453.26fb96cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5d2f10a.css",
+    "static/js/main.3acee538.js"
+  ]
+}
