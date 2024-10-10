@@ -558,6 +558,19 @@ visibility: visible;
 
 
  
+.inner-dropdown-approach{
+    position: absolute;
+    
+
+}
+.inner-text-approach{
+
+}
+
+.approach-menu-container{
+display: flex;
+}
+
 
 
 .who-background {
@@ -933,8 +946,7 @@ visibility: visible;
 .news-insights-report-container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    width: 52.8vw;
+    justify-content: space-between;
 
 }
 

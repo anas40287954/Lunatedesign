@@ -239,25 +239,11 @@ export default function Navbar() {
 
 
 
-                                    <div className={"mega-menu-items-approach-container " + (hovered ? "mega-menu-drop" : "mega-menu-pull")} ref={MegaRef2}>
-                                        {hovered === "approach" &&
-                                            (
-                                                <>
-                                                    <ul className="mega-menu-items-approach">
-                                                        <li className="approach-menu">Strategies</li>
-                                                        <li className="approach-menu">Assets Classes</li>
-                                                        <li className="approach-menu">Solutions & Product
-                                                        
-                                                        </li>
-                                                    </ul>
-                                                </>
-                                            )
-                                        }
-                                    </div>
-
+                                  
 
 
                                 </li>
+                                
                                 <li
                                     onMouseEnter={() => {
 
@@ -271,6 +257,32 @@ export default function Navbar() {
                                         </svg>
                                     </a>
 
+                                    <div className="approach-menu-container">
+                                        <div className={"mega-menu-items-approach-container " + (hovered ? "mega-menu-drop" : "mega-menu-pull")} ref={MegaRef2}>
+                                            {hovered === "approach" &&
+                                                (
+                                                    <>
+                                                        <ul className="mega-menu-items-approach">
+                                                            <li className="approach-menu">Strategies</li>
+                                                            <li className="approach-menu">Assets Classes</li>
+                                                            <li className="approach-menu">Solutions & Product</li>
+                                                        </ul>
+                                                    </>
+                                                )
+                                            }
+                                        </div>
+                                        
+                                        <div className="inner-dropdown-approach">
+                                            <ul>
+                                                <li className="inner-text-approach">asd</li>
+                                                <li className="inner-text-approach">asd</li>
+                                                <li className="inner-text-approach">asd</li>
+                                                <li className="inner-text-approach">asd</li>
+                                                <li className="inner-text-approach">asd</li>
+                                                <li className="inner-text-approach">asd</li>
+                                            </ul>
+                                        </div>
+                                    </div>
 
 
                                 </li>
