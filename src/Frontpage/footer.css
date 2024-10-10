@@ -3,6 +3,7 @@
     --bs-footer-font-color: white;
     --bs-footer-special-text-color: rgba(166, 139, 92, 1);
     --bs-footer-saparator-color: rgba(168, 161, 163, 1);
+    --bs-footer-hover-color: #A68B5C;
 }
 
 
@@ -143,7 +144,8 @@
     position: relative;
     padding: 15px 0px;
     list-style: none;
-    padding-left: 20px;
+    padding-left: 22px;
+    transition: 0.3s ease;
 }
 
 
@@ -151,6 +153,7 @@
 .footer-menu {
     display: flex;
     flex-direction: column;
+    
 }
 
 .footer-menu-head {
@@ -175,6 +178,13 @@
     transform: rotate(-45deg);
 }
 
+.footer-sub-menu:hover::before{
+    border-color: transparent var(--bs-footer-hover-color) var(--bs-footer-hover-color) transparent;
+}
+
+
+
+
 .social-media-container {
     display: flex;
     border-top: 1px solid var(--bs-footer-saparator-color);
@@ -194,9 +204,16 @@
 
 .footer-lunate-rights-text {
     color: var(--bs-footer-font-color);
+    
 }
 
 
+
+.footer-menu li:hover{
+    color: var(--bs-footer-hover-color);
+    padding-left: 33px;
+    transition: 0.3s ease;
+}
 
 
 @media (max-width:1320px) {

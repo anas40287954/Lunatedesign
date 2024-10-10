@@ -459,11 +459,11 @@ visibility: visible;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
-    width: 100%;
+    width: 12rem;;
     padding-top: 20px;
     top: 0px;
     transform: translateY(60px);
-
+    
     transition: visibility 0.3s ease, opacity 0.3s ease;
     animation:pullabout 0.3s ease;
     
@@ -481,7 +481,7 @@ visibility: visible;
     list-style: none;
     width: 100%;
     padding:20px 0px ;
-    
+    border-bottom: 1px solid black;
     
 }
 
@@ -502,7 +502,7 @@ visibility: visible;
    
     opacity: 0;
     visibility: hidden;
-    width: 100%;
+    width: 12rem;
     top:0px;
     padding-top:20px ;
     transform: translateY(60px);
@@ -514,7 +514,7 @@ visibility: visible;
 .approach-menu{
     list-style: none;
     width: 100%;
-    
+    border-bottom: 1px solid black;
     padding:20px 0px ;
     
 }
@@ -1945,3 +1945,9 @@ visibility: visible;
         transform: translateY(0px);
     }
 }
+
+
+
+
+
+

@@ -174,9 +174,9 @@ export default function Navbar() {
     useEffect(() => {
         // Update the height of the mega menu cover based on the content's height
         if (hovered) {
-            const menuHeight=MegaRef2.current.scrollHeight;
-            const menuHeight2= MegaRef.current.scrollHeight; // Use scrollHeight to account for all content
-            const sumofheight=menuHeight + menuHeight2;
+            const menuHeight = MegaRef2.current.scrollHeight;
+            const menuHeight2 = MegaRef.current.scrollHeight; // Use scrollHeight to account for all content
+            const sumofheight = menuHeight + menuHeight2;
 
             setMenuHeight(sumofheight);
             console.log(menuHeight)
@@ -189,7 +189,9 @@ export default function Navbar() {
     return (
         <div>
             <div
-
+                onMouseLeave={() => {
+                    sethovered("")
+                }}
 
                 ref={NavRef} className={"custom-nav-container " + (!isScrolled ? "fadeout-scroll" : "")}>
                 <div className={"nav-container " + (!isScrolled ? "fadeout-scroll-background" : "")}>
@@ -209,9 +211,7 @@ export default function Navbar() {
 
                                         sethovered("about")
                                     }}
-                                    onMouseLeave={() => {
-                                        sethovered("")
-                                    }}
+
 
 
                                 >
@@ -222,7 +222,7 @@ export default function Navbar() {
                                     </a>
 
 
-                                    <div className={"mega-menu-items-about-container " + (hovered ? "mega-menu-drop" : "")} ref={MegaRef}>
+                                    <div className={"mega-menu-items-about-container " + (hovered ? "mega-menu-drop" : "mega-menu-pull")} ref={MegaRef}>
                                         {hovered === "about" &&
                                             (
                                                 <>
@@ -236,32 +236,19 @@ export default function Navbar() {
                                         }
 
                                     </div>
-                                   
 
-                                </li>
-                                <li
-                                    onMouseEnter={() => {
 
-                                        sethovered("approach")
-                                    }}
-                                    onMouseLeave={() => {
-                                        sethovered("")
-                                    }}
-                                    className="items-info droppable ourapproachdrop">
-                                    <a href="" className="items-info main-menu-items">Our Approach
-                                        <svg className="about-drop-arrow" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6 9L12 15L18 9" stroke="currentColor" />
-                                        </svg>
-                                    </a>
 
-                                    <div className={"mega-menu-items-approach-container " + (hovered ? "mega-menu-drop" : "")} ref={MegaRef2}>
+                                    <div className={"mega-menu-items-approach-container " + (hovered ? "mega-menu-drop" : "mega-menu-pull")} ref={MegaRef2}>
                                         {hovered === "approach" &&
                                             (
                                                 <>
                                                     <ul className="mega-menu-items-approach">
                                                         <li className="approach-menu">Strategies</li>
                                                         <li className="approach-menu">Assets Classes</li>
-                                                        <li className="approach-menu">Solutions & Product</li>
+                                                        <li className="approach-menu">Solutions & Product
+                                                        
+                                                        </li>
                                                     </ul>
                                                 </>
                                             )
@@ -269,9 +256,36 @@ export default function Navbar() {
                                     </div>
 
 
+
                                 </li>
-                                <li className="items-info"><a href="" className={"items-info main-menu-items"}>News & Insights</a></li>
-                                <li className="items-info"><a href="" className={"items-info main-menu-items"}>Careers</a></li>
+                                <li
+                                    onMouseEnter={() => {
+
+                                        sethovered("approach")
+                                    }}
+
+                                    className="items-info droppable ourapproachdrop">
+                                    <a href="" className="items-info main-menu-items">Our Approach
+                                        <svg className="about-drop-arrow" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 9L12 15L18 9" stroke="currentColor" />
+                                        </svg>
+                                    </a>
+
+
+
+                                </li>
+                                <li
+                                    onMouseEnter={() => {
+                                        sethovered("")
+                                    }}
+                                    className="items-info"><a href="" className={"items-info main-menu-items"}>News & Insights</a></li>
+
+
+                                <li
+                                    onMouseEnter={() => {
+                                        sethovered("")
+                                    }}
+                                    className="items-info"><a href="" className={"items-info main-menu-items"}>Careers</a></li>
                                 <Button text="Contact Us" />
                             </ul>
 

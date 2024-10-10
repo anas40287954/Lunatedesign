@@ -13,12 +13,13 @@ import Footer from "./Footer";
 function Homepage() {
 
 
-
     return (
         <div>
             <div className='hero-image'>
 
+
                 <Navbar />
+
 
                 <div className='hero-banner'>
                     <div className='hero-text-container'>
@@ -42,8 +43,8 @@ function Homepage() {
                 <Whoweare />
             </div>
             <div className='segment3'>
-        <Ourapproach />
-      </div>
+                <Ourapproach />
+            </div>
             <div className="segment4">
                 <NewsInsights />
             </div>
