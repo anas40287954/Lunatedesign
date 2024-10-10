@@ -76,7 +76,7 @@
     
     display: flex;
     justify-content: center;
-    
+    position: relative;
     max-width: 100%;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -91,17 +91,28 @@
 .custom-nav-container {
   
     position: fixed;
-    overflow-y:auto;
+   
     padding: 0px 100px;
     background-color: transparent;
     transition: 1s ease;
     width: -webkit-fill-available;
     z-index: 100;
+    opacity: 1;
+    visibility: visible;
 }
+
+
+
+.backgroundcolor-nav{
+    background-color: white;
+}
+
+
+
 
 .custom-nav-container:hover {
     background-color: white;
-
+    
 }
 
 
@@ -120,6 +131,21 @@
 }
 
 
+.fadeout-scroll{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+   
+   
+}
+
+
+
+
+.fadeout-scroll-background{
+    
+    color: black;
+}
 
 
 
@@ -200,12 +226,6 @@
 
 
 
-.aboutlunate-drop-content {
-    position: absolute;
-    z-index: 2;
-    color: red;
-}
-
 
 
 
@@ -235,12 +255,19 @@
     margin: 0px;
     padding: 0px;
     width: fit-content;
-
+    
     gap: 40px;
 
 }
 
 
+
+
+
+
+.color-nav{
+    color: black;
+}
 
 .hero-text-container {
 
@@ -412,16 +439,93 @@ visibility: visible;
 
 
 .mega-menu-cover {
+  position: absolute;
+  left: 0px;
+  width: 100vw;
+    
     background-color: var(--bs-nav-background-color);
-
-
+    /* background-color: #9A9194; */
     transition: background 0.3s ease, height 0.3 ease;
 
 }
 
 .aboutlunate {
+    position: relative;
     
 }
+.mega-menu-items-about-container{
+    position: absolute; 
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    width: 100%;
+    padding-top: 20px;
+    top: 0px;
+    transform: translateY(60px);
+
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    animation:pullabout 0.3s ease;
+    
+    
+}
+
+.mega-menu-items-about{  
+   
+    padding-left: 0px;
+    margin: 0px;
+    
+}
+
+.aboutlunate-menu{
+    list-style: none;
+    width: 100%;
+    padding:20px 0px ;
+    
+    
+}
+
+
+
+
+
+
+.ourapproachdrop{
+    position: relative;
+}
+
+
+
+
+.mega-menu-items-approach-container{
+    position: absolute;
+   
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    top:0px;
+    padding-top:20px ;
+    transform: translateY(60px);
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    animation:pullabout 0.3s ease;
+    
+}
+
+.approach-menu{
+    list-style: none;
+    width: 100%;
+    
+    padding:20px 0px ;
+    
+}
+
+
+.mega-menu-items-approach{
+    padding-left: 0px;
+    
+
+}
+
 
 
 
@@ -430,35 +534,26 @@ visibility: visible;
     color: var(--bs-heading-who-color);
 } */
 
-.aboutlunate-info {
-    display: flex;
-    flex-direction: column;
+
+/* asddjsajdjalsdj */
+.mega-menu-drop{
+   
+    /* transition: 0.5s ease;  */
+    /* animation: dropmenu 0.5s ease; */
+    opacity: 1;
+    transform: translateY(60px);
+    visibility:visible;
+    transition: visibility 0.3s ease,opacity 0.3s ease;
+    animation: dropabout 0.3s ease;
+   
+    
 }
-
-
-.mega-menu{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px;
-    transform: translateY(-20px);
-    transition: tranform 0.5s ease,padding 0.5s ease;
+.mega-menu-pull{
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    animation:pullabout 0.3s ease;
 }
-
-.mega-content{
-    list-style: none;
-}
-
-.slide-mega-menu{
-    transform: translateY(20px);
-    color: white;
-    padding: 20px 0px;
-    transition: transform 0.5s ease;
-}
-
-
-
-
 
 
 
@@ -1823,5 +1918,30 @@ visibility: visible;
 
     100% {
         left: 100%;
+    }
+}
+
+@keyframes dropmenu {
+    0%{
+        bottom: 0px;
+    }100%{
+        bottom: -40px;
+    }
+}
+
+
+@keyframes dropabout {
+    0%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(60px);
+    }
+}
+
+@keyframes pullabout {
+    0%{
+        transform: translateY(60px);
+    }100%{
+        transform: translateY(0px);
     }
 }
