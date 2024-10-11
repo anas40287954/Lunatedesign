@@ -99,6 +99,7 @@
     z-index: 100;
     opacity: 1;
     visibility: visible;
+    
 }
 
 
@@ -112,7 +113,7 @@
 
 .custom-nav-container:hover {
     background-color: white;
-    
+    box-shadow: 0px 5px 15px rgb(151, 150, 150);
 }
 
 
@@ -446,7 +447,8 @@ visibility: visible;
     background-color: var(--bs-nav-background-color);
     /* background-color: #9A9194; */
     transition: background 0.3s ease, height 0.3 ease;
-
+    
+    box-shadow: 0px 5px 5px rgba(151, 150, 150, 0.7)
 }
 
 .aboutlunate {
@@ -459,7 +461,7 @@ visibility: visible;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
-    width: 12rem;;
+    width: 100%;
     padding-top: 20px;
     top: 0px;
     transform: translateY(60px);
@@ -502,8 +504,8 @@ visibility: visible;
    
     opacity: 0;
     visibility: hidden;
-    width: 12rem;
-    top:0px;
+    width: 100%;
+    top:-35px;
     padding-top:20px ;
     transform: translateY(60px);
     transition: visibility 0.3s ease, opacity 0.3s ease;
@@ -513,7 +515,7 @@ visibility: visible;
 
 .approach-menu{
     list-style: none;
-    width: 100%;
+    width: 10rem;
     border-bottom: 1px solid black;
     padding:20px 0px ;
     
@@ -560,15 +562,50 @@ visibility: visible;
  
 .inner-dropdown-approach{
     position: absolute;
-    
+    right: -36vh;
+    bottom: 0px;
+    display: flex;
+      visibility: hidden;
+    opacity: 0;
+     z-index: 10;
+     transform: translate(5vh);
+    transition: opacity 0.1s ease, visibility 0.1s ease;
 
 }
+
+.inner-dropdown-approach ul{
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 103px;
+    justify-content: flex-end;
+    /* flex: 1; */
+    gap: 20px;
+    list-style: none;
+    align-items: flex-end;
+    transition: 0.5s ease;
+}
+
 .inner-text-approach{
 
 }
 
 .approach-menu-container{
+    position:absolute;
 display: flex;
+}
+.within-drop-down{
+    display: flex;
+    transform: translate(5vh);
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+
+}
+
+.within-pull-up{
+    display: none;
 }
 
 
@@ -1106,7 +1143,11 @@ display: flex;
         color: white;
     }
 
-
+    .custom-nav-container:hover {
+        background-color: transparent;
+        box-shadow: 0px 5px 15px rgb(151, 150, 150,0);
+    }
+    
 
 
 

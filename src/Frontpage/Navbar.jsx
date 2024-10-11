@@ -142,7 +142,7 @@ export default function Navbar() {
     const MegaRef = useRef(null);
     const MegaRef2 = useRef(null);
     const [hovered, sethovered] = useState("")
-
+    const [solhovered, setsolhovered] = useState(false)
     const [isScrolled, setIsScrolled] = useState(true);
     const NavRef = useRef(null);
     const lastScrollY = useRef(0);
@@ -186,11 +186,36 @@ export default function Navbar() {
         }
     });
 
+
+
+
+    // useEffect(() => {
+    //     if (!isScrolled) {
+    //         // Lock the scroll
+    //         document.body.style.overflow = 'hidden';
+    //     } else {
+    //         // Unlock the scroll
+    //         document.body.style.overflow = 'unset';
+    //     }
+
+    //     // Clean up to ensure scroll is unlocked when the component unmounts
+    //     return () => {
+    //         document.body.style.overflow = 'unset';
+    //     };
+    // }, [!isScrolled]);
+
+
+
+
+
     return (
         <div>
             <div
                 onMouseLeave={() => {
                     sethovered("")
+
+                    setsolhovered(false)
+
                 }}
 
                 ref={NavRef} className={"custom-nav-container " + (!isScrolled ? "fadeout-scroll" : "")}>
@@ -239,15 +264,20 @@ export default function Navbar() {
 
 
 
-                                  
+
 
 
                                 </li>
-                                
+
                                 <li
                                     onMouseEnter={() => {
 
                                         sethovered("approach")
+                                    }}
+                                    onMouseLeave={() =>{
+                    
+                                        setsolhovered(false)
+                    
                                     }}
 
                                     className="items-info droppable ourapproachdrop">
@@ -265,23 +295,30 @@ export default function Navbar() {
                                                         <ul className="mega-menu-items-approach">
                                                             <li className="approach-menu">Strategies</li>
                                                             <li className="approach-menu">Assets Classes</li>
-                                                            <li className="approach-menu">Solutions & Product</li>
+                                                            <li
+                                                                onMouseEnter={() => {
+                                                                    setsolhovered(true)
+                                                                }}
+
+
+                                                                className="approach-menu">Solutions & Product</li>
                                                         </ul>
                                                     </>
                                                 )
                                             }
+                                            <div className={"inner-dropdown-approach " + (solhovered ? "within-drop-down" : "")}>
+                                                <ul>
+                                                    <li className="inner-text-approach">EFT overview</li>
+                                                    <li className="inner-text-approach">EFT overview</li>
+                                                    <li className="inner-text-approach">EFT overview</li>
+                                                    <li className="inner-text-approach">EFT overview</li>
+                                                    <li className="inner-text-approach">EFT overview</li>
+                                                    <li className="inner-text-approach">EFT overview</li>
+                                                
+                                                </ul>
+                                            </div>
                                         </div>
-                                        
-                                        <div className="inner-dropdown-approach">
-                                            <ul>
-                                                <li className="inner-text-approach">asd</li>
-                                                <li className="inner-text-approach">asd</li>
-                                                <li className="inner-text-approach">asd</li>
-                                                <li className="inner-text-approach">asd</li>
-                                                <li className="inner-text-approach">asd</li>
-                                                <li className="inner-text-approach">asd</li>
-                                            </ul>
-                                        </div>
+
                                     </div>
 
 
